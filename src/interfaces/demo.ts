@@ -1,7 +1,10 @@
 import { DEMO_FAIL,DEMO_LOADING,DEMO_SUCCESS } from '../constants/demo';
 
 export interface res {
-    disclaimer:string
+    time:{},
+    disclaimer:string,
+    chartName:string,
+    bpi:{}
  }
 
 export interface DEMO_FAIL {

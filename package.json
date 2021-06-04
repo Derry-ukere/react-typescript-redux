@@ -33,13 +33,11 @@
     "lint:fix": "eslint ./src/**/*.tsx --max-warnings 0 --fix",
     "eject": "react-scripts eject"
   },
-  "husky":{
+  "husky": {
     "hooks": {
-      "pre-commit": "lint-staged"
+      "pre-commit": "npm run lint:fix",
+      "pre-push": "npm run test:all"
     }
-  },
-  "lint-staged":{
-    "*.tsx && .ts":["yarn lint", "yarn test", "yarn build"]
   },
   "eslintConfig": {
     "extends": "react-app"

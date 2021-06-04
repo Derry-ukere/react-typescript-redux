@@ -4,11 +4,7 @@ module.exports = {
     es6: true,
     node: true,
   },
-  extends: [
-    'eslint:recommended',
-    'plugin:@typescript-eslint/eslint-recommended',
-    // 'plugin:security/recommended',
-  ],
+  extends: ['eslint:recommended', 'plugin:@typescript-eslint/eslint-recommended', 'plugin:security/recommended'],
   globals: {
     Atomics: 'readonly',
     SharedArrayBuffer: 'readonly',
